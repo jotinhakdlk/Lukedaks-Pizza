@@ -12,11 +12,18 @@
 
 .container{
     display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 main{
     background-color: var(--cor-principal);
-    padding: 3vh 3vh;
+    padding: 3vh 3vh 1.5vh;
+    align-items: center;
 }
 
 .container_name{
@@ -27,4 +34,28 @@ main{
 
 .container_logo{
     height: 15vh;
+}
+
+.container_barradebusca{
+    font-size: 2vh;
+    border-radius: 2vh;
+    border-style: none;
+    padding: 1vh;
+    background-color: var(--cor-secundaria);
+    color: #000000;
+}
+
+.buscar_icone{
+    height: 3vh;
+    background-color: transparent;
+}
+
+.buscar_icone:hover{
+    height: 3.5vh;
+    transition: 0.1s ease;
+}
+
+.container_botao{
+        background-color: transparent;
+        border-style: none;
 }
