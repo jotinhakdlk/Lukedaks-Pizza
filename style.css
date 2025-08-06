@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
 
+@-webkit-keyframes slide-in-blurred-left{0%{-webkit-transform:translateX(-1000px) scaleX(2.5) scaleY(.2);transform:translateX(-1000px) scaleX(2.5) scaleY(.2);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateX(0) scaleY(1) scaleX(1);transform:translateX(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes slide-in-blurred-left{0%{-webkit-transform:translateX(-1000px) scaleX(2.5) scaleY(.2);transform:translateX(-1000px) scaleX(2.5) scaleY(.2);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateX(0) scaleY(1) scaleX(1);transform:translateX(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
 :root{
     --cor-principal: #c14a09;
     --cor-secundaria: #ffce1b;
+    --cor-selecionado: #cfa715;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+}
+
+body{
+    background-color: var(--cor-secundaria);
 }
 
 .container{
@@ -20,10 +27,14 @@
     grid-template-columns: 50% 50%;
 }
 
-main{
+header{
     background-color: var(--cor-principal);
-    padding: 3vh 3vh 1.5vh;
+    padding: 1.5vh 3vh;
     align-items: center;
+}
+
+a{
+    text-decoration: none;
 }
 
 .container_name{
@@ -43,11 +54,13 @@ main{
     padding: 1vh;
     background-color: var(--cor-secundaria);
     color: #000000;
+    margin-left: 7vh;
 }
 
 .buscar_icone{
     height: 3vh;
     background-color: transparent;
+    margin-left: 2vh;
 }
 
 .buscar_icone:hover{
@@ -56,6 +69,22 @@ main{
 }
 
 .container_botao{
-        background-color: transparent;
-        border-style: none;
+    background-color: transparent;
+     border-style: none;
+}
+
+.container_link{
+    color: var(--cor-secundaria);
+    font-size: 3vh;
+    margin: 0 2vh;
+}   
+
+.container_link:hover{
+    font-size: 3.5vh;
+    color: var(--cor-selecionado);
+    transition: 0.1s ease;
+}
+
+.logo{
+    -webkit-animation:slide-in-blurred-left .6s cubic-bezier(.23,1.000,.32,1.000) both;animation:slide-in-blurred-left .6s cubic-bezier(.23,1.000,.32,1.000) both;
 }
