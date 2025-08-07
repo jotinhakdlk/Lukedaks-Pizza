@@ -88,3 +88,24 @@ a{
 .logo{
     -webkit-animation:slide-in-blurred-left .6s cubic-bezier(.23,1.000,.32,1.000) both;animation:slide-in-blurred-left .6s cubic-bezier(.23,1.000,.32,1.000) both;
 }
+
+.section_imagem{
+    height: 50vh;
+    border-radius: 30px;
+    box-shadow: var(--cor-principal) 10px 10px 5px;
+}
+
+.section_titulo{
+    color: var(--cor-principal);
+    font-size: 6vh;
+}
+
+.section_primeira{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.section_texto{
+    width: 100vh;
+    font-size: 3.5vh;
+}
